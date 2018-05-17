@@ -118,16 +118,45 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".click>a.page").on("click",function(evt){
+	
+	
+	$(".click>a").eq(0).on("click",function(evt){
 		
 		$(".shadow").show();
 		$(".lightbox").show();
+		$(".lightbox1").show();
 		evt.preventDefault();
 	});
 	
+	$(".click>a").eq(1).on("click",function(evt){
+		
+		$(".shadow").show();
+		$(".lightbox").show();
+		$(".lightbox2").show();
+		evt.preventDefault();
+	});
+	
+	$(".click>a").eq(2).on("click",function(evt){
+		
+		$(".shadow").show();
+		$(".lightbox").show();
+		$(".lightbox3").show();
+		evt.preventDefault();
+	});
+	
+	$(".click>a").eq(3).on("click",function(evt){
+		
+		$(".shadow").show();
+		$(".lightbox").show();
+		$(".lightbox4").show();
+		evt.preventDefault();
+	});
+	
+	
+	
 	$(".clse").on("click",function(){
-				$(".lightbox").hide();
-				$(".shadow").hide();
+		$(".lightbox").hide();
+		$(".shadow").hide();
 	});
 			
 	//부모(.shadow) 영역으로의 이벤트 전파 stop

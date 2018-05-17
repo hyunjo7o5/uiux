@@ -305,22 +305,23 @@ section{
 	background-position:-100px 0;
 	}
 .container_3>.click>a:nth-child(3){
-	background-image:url();
-	background-size:cover;
-	background-position:-100px 0;
-	}
-.container_3>.click>a:nth-child(4){
 	background-image:url(../images/event.jpg);
 	background-size:cover;
-	}
-.container_3>.click>a:nth-child(5){
+}
+.container_3>.click>a:nth-child(4){
 	background-image:url(../images/port.jpg);
 	background-size:cover;
 	background-position:-110px 0;
 }
+.container_3>.click>a:nth-child(5){
+
+
+	}
+
 .container_3>.click>a:nth-child(6){
 	
 }
+
 
 .container_3>.click>a>p{
 	width:400px;
@@ -350,13 +351,13 @@ section{
 }
 
 .shadow>.lightbox{
-
+	display:none;
 	position:absolute;
 	left:50%;
 	top:50%;
 	width:1200px;
 	height:700px;
-	background-color:#FFF;
+	background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 	margin:-350px 0 0 -600px;
 }
 
@@ -378,6 +379,145 @@ section{
 }
 
 
+/*lightbox1 미드미*/
+
+.sub{
+	position:relative;
+	margin:40px;
+}
+	
+.sub>p{
+	margin-left:50px;
+	line-height:30px;
+	color:#000;
+	font-size:40px;
+	font-weight:800;
+	font-family:NanumBarunpen;	
+
+}
+
+.sub>.content{*zoom:1;}
+.sub>.content:after{display:block; clear:both; content:'';}
+
+.sub>.content>.sub-photo{
+	float:left;
+	width:700px;
+	height:600px;
+
+}
+
+.sub>.content>.sub-photo>p{
+	position:absolute;
+	width:500px;
+	height:280px;
+	text-indent:-9999px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.lightbox1>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/midemi2.jpg);
+
+}
+.lightbox1>.content>.sub-photo>p:last-child{
+top:300px;
+	left:150px;
+	background-image:url(../images/midemi1.jpg);
+}
+
+
+.sub>.content>.sub-text{
+	float:left;
+	width:400px;
+	height:550px;
+	color:#000;
+
+}
+
+.sub>.content>.sub-text>p{
+	margin-top :60px;
+	font-size:30px;
+	font-family:NanumBarunpen;	
+	text-align:center;
+
+}
+
+.sub>.content>.sub-text>p:last-child{height:200px; line-height:30px; font-size:20px;}
+
+.sub>.content>.button{
+	position:absolute;
+	right:120px;
+	bottom: 50px;
+
+
+}
+
+.sub>.content>.button>a{
+	display:block;
+	width:200px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	background-color:#ee6459;
+	font-size:30px;
+	font-family:NanumBarunpen;	
+	color:#000;
+}
+
+.lightbox1{display:none;}
+
+
+/*lightbox2 pai*/
+
+
+
+.lightbox2>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/paipg2.jpg);
+
+}
+.lightbox2>.content>.sub-photo>p:last-child{
+	top:300px;
+	left:150px;
+	background-image:url(../images/paipg1.jpg);
+}
+
+.lightbox2{display:none;}
+
+
+/*lightbox3 event page*/
+
+.lightbox3>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/eventpg1.jpg);
+
+}
+.lightbox3>.content>.sub-photo>p:last-child{
+	top:300px;
+	left:150px;
+	background-image:url(../images/eventpg1.jpg);
+}
+
+.lightbox3{display:none;}
+
+/*lightbox4 portfolio page*/
+
+.lightbox4>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/port2.jpg);
+
+}
+.lightbox4>.content>.sub-photo>p:last-child{
+	top:300px;
+	left:150px;
+	background-image:url(../images/port1.jpg);
+}
+.lightbox4{display:none;}
 
 /* epilogue */
 .container_4{*zoom:1;}
