@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body{
+	color:#000;
+	font-size:12px;
+	background-color:#fdfcf0;
+}
+
+#wrap{
+	width:1000px;
+	margin:30px auto 0;
+	/* outline:1px solid pink; */
+}
+
+h1{
+	/* margin:20px 0;  마진 통합현상 발생*/
+	padding:20px 0; 
+	font-size:15px;
+}
+/*
+	+ ,~ : 인접형제(동기) 연산자
+	h1 과 형제 이면서 
+	h1 바로 다음에 나오는 p 태그  
+*/
+h1+p{
+	font-weight:600;
+}
+
+.guide{
+	margin:20px 0;
+	padding:40px 0;
+	border:1px solid #e1ddd3;
+	border-left:none;
+	border-right:0;
+	
+}
+
+.guide>p{
+	margin-left:30px;
+	
+}
+
+.guide>ul{
+	margin:20px 0 0 30px;
+	/* margin-top:20px; */
+	/* margin-left:30px; */
+}
+
+.guide>ul>li{
+	line-height: 1.6;
+}
+
+.guide>ul>li>span{
+	display:block;
+	text-indent:7px;
+	
+}
+
+.contact>h2{
+	margin-left:30px;
+	font-size:13px;
+	
+}
+
+.contact>ul{
+	margin:20px 15px;
+	padding:20px 0 20px 20px;
+	border:1px solid #e1ddd3;
+}
+
+/*문맥 선택자 : .contact의 자손인  li 라는 뜻 */
+.contact li{
+	height:18px;
+	line-height:18px;
+		/* %, px, 1.n 3가지 방법 있음 */
+}
+
+.contact li:last-child{
+	height:40px;
+	/* margin-left:-10px; */
+	font-weight:600;
+	line-height:40px;
+	text-indent:-10px;
+	/* - 를 쓰며 반대방향으로 감 */
+}
+
+.contact p{
+	margin:20px 15px;
+	padding:20px;
+	padding-right:0;
+	/* padding:20px 0 20px 20px; 랑 동일한 다른 방법*/
+	line-height:18px;
+	border:1px solid #e1ddd3;
+}
+
+
+
+
+
+
+
+
+
+

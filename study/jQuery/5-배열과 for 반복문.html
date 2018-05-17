@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>배열과 for 반복문</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		$(document).ready(function(){
+			//여러개의 값을 한꺼번에 저장할 수 있는 배열 변수
+			var days = ["월","화","수","목","금","토","일"];
+			
+			days[3] = "목요일" //변수 변경
+			
+			days[7] = "공휴일"; //변수 추가
+			days[8] = "명절";
+			
+			days.push("기념일");
+			
+			console.log(days[0]);
+			console.log(days[1]);
+			console.log(days[2]);
+			console.log(days[3]);
+			console.log(days[4]);
+			console.log(days[5]);
+			console.log(days[6]);
+			console.log(days[7]); //공휴일
+			console.log(days[8]); //명절
+			console.log(days[9]); //기념일
+
+			
+			console.log(days.length);//배열의 길이
+			
+			
+			var num = [100, 200, 300, 400, "500"];
+			
+			console.log(num[0]);
+			console.log(num[1]);
+			console.log(num[2]);
+			console.log(num[3]);
+			console.log(num[4]);
+			
+			/*
+			for(반복문 내에서 사용할 변수 초기화 ; 조건식; 증감식){
+				실행할 코드
+			}
+			*/
+			
+			for(var i = 0; i<=4;i=i+1){
+	
+				console.log(num[i]);
+			
+			}
+			
+		});
+	//]]>
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

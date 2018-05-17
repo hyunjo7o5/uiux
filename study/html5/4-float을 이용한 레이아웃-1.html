@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float을 이용한 레이아웃-1</title>
+	<style>
+	
+	*{margin: 0; padding: 0;}		
+	
+	#wrap{
+		width:700px;
+		margin:0 auto;
+	}
+	
+	header{
+		
+		width:700px;
+		height:150px;
+		margin-top:30px;
+		border:1px solid black;
+		box-sizing:border-box;
+		
+		
+	}
+	
+	h1{
+		
+		height:150px;		
+		font-size:16px;
+		line-height:150px;
+		text-align:center;
+		
+	}
+	
+	section{
+		width:700px;
+		height:400px;
+		margin: 10px 10px 10px 0;
+		*zoom:1;
+	}
+
+		
+	section:after{display:block; clear:both; content:'';}
+	
+	
+	.left{
+		float:left;
+		width:250px;
+		height:400px;
+		line-height: 400px;
+		text-align:center;
+		border:1px solid black;
+		box-sizing:border-box;
+		
+	}
+	
+	.cont{
+		float:left;
+		width:436px;
+		height:400px;
+		margin-left:10px;
+		line-height: 400px;
+		text-align:center;
+		border:1px solid black;
+		box-sizing:border-box;
+		
+	}
+	
+	
+	footer{
+		width:700px;
+		height:100px;
+		border:1px solid black;
+		box-sizing:border-box;
+	}
+	
+	address{
+
+		line-height: 100px;
+		text-align:center;
+		
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<div id="wrap">
+      <header><h1>메인메뉴 영역</h1></header>
+      <section>
+         <div class="left">서브메뉴</div>
+         <div class="cont">본문내용</div>
+      </section>
+      <footer><address>Copyright</address></footer>      
+   </div>
+</body>
+</html>
+
+
+
+
+
+
+

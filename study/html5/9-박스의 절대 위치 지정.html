@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>포지션으로 박스 위치이동</title>
+	<style>
+	
+		*{margin:0;padding:0;}
+		
+		p>span{
+			display:block;
+			width:100px;
+			height:100px;
+			line-height:100px;
+			text-align:center;
+			background-color:#FF0;
+			border:1px solid blue;
+			
+		}
+		
+		
+		
+		p>span.box{
+			/*
+			position:absolute;
+			
+			left:100px;
+			top:200px;
+			가장많이 사용되는 것 = left, top
+			
+			right:100px;
+			bottom:100px;
+			
+			absolute는 요소가 떠서 이동하는 방식
+			포지션의 기준점은 따로 지정하지 않았다면 브라우저
+			*/
+			position:absolute;
+			left:50px;
+			top:250px;
+			background-color:#F00;
+			
+			
+		}
+		
+		
+		
+	
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+
+	//]]>
+	</script>
+</head>
+<body>
+	<p>
+		
+		<span>박스-1</span>
+		<span>박스-2</span>
+		<span class="box">포박스</span>
+		<span>박스-3</span>
+		<span>박스-4</span>
+		<span>박스-5</span>
+		
+		
+	</p>
+</body>
+</html>

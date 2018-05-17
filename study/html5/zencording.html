@@ -1,0 +1,232 @@
+<!-- zencoding -->
+
+#name
+div#name
+<div id="name"></div>
+
+.name
+div.name
+<div class="name"></div>
+
+.one.two
+div.one.two
+<div class="one two"></div>
+
+#name.one.two
+div#name.one.two
+<div id="name" class="one two"></div>
+
+
+
+div>p
+<div>
+	<p></p>
+</div>
+
+p*2
+p+p
+<p></p>
+<p></p>
+
+p.name-$*3
+<p class="name-1"></p>
+<p class="name-2"></p>
+<p class="name-3"></p>
+<!-- $는 넘버링되는 것 -->
+
+
+ul>li  <!-- 이방식을 더많이 사용함 -->
+ul+
+<ul>
+	<li></li>
+</ul>
+
+table+
+table>tr>td
+<table>
+	<tr>
+		<td></td>
+	</tr>
+</table>
+
+li.day_0$*7>span
+<li class="day_01"><span></span></li>
+<li class="day_02"><span></span></li>
+<li class="day_03"><span></span></li>
+<li class="day_04"><span></span></li>
+<li class="day_05"><span></span></li>
+<li class="day_06"><span></span></li>
+<li class="day_07"><span></span></li>
+
+
+nav>ul>li.first+(li*4)+li.last
+
+<nav>
+	<ul>
+		<li class="first"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li class="last"></li>
+	</ul>
+</nav>
+
+
+(header>nav)+(section>.left+.content)+footer
+<header>
+	<nav></nav>
+</header>
+<section>
+	<div class="left"></div>
+	<div class="content"></div>
+</section>
+<footer></footer>
+
+#page>span.logo+(ul#nav>li*5>a)
+<div id="page">
+	<span class="logo"></span>
+	<ul id="nav">
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+</div>
+
+
+
+#wrap>.ad_notice+(.logo>h1)+(.copy>p)+(.side>a[href="#"])+(#contents>#container)
+<div id="wrap">
+	<div class="ad_notice"></div>
+	<div class="logo">
+		<h1></h1>
+	</div>
+	<div class="copy">
+		<p></p>
+	</div>
+	<div class="side"><a href="#"></a></div>
+	<div id="contents">
+		<div id="container"></div>
+	</div>
+</div>
+
+
+#wrap>.sllides>(.slides_container>.ban_1*5>a[href="#"])+(ul.indicator>li*5>a[href="#"])
+<div id="wrap">
+	<div class="sllides">
+		<div class="slides_container">
+			<div class="ban_1"><a href="#"></a></div>
+			<div class="ban_1"><a href="#"></a></div>
+			<div class="ban_1"><a href="#"></a></div>
+			<div class="ban_1"><a href="#"></a></div>
+			<div class="ban_1"><a href="#"></a></div>
+		</div>
+		<ul class="indicator">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+#wrap>.left_side+(.main_banner.shadow>.banner_wrap.clearFix>img[src="img/main_banner_$"]*6)+(.arrow>ul>li.arrow_pos_$*7)+(.banner_menu>ul>li.bg_pos_$*6)+(.right_side>img[src="img/santa.png"])
+<div id="wrap">
+	<div class="left_side"></div>
+	<div class="main_banner shadow">
+		<div class="banner_wrap clearFix">
+			<img src="img/main_banner_1" alt="" />
+			<img src="img/main_banner_2" alt="" />
+			<img src="img/main_banner_3" alt="" />
+			<img src="img/main_banner_4" alt="" />
+			<img src="img/main_banner_5" alt="" />
+			<img src="img/main_banner_6" alt="" />
+		</div>
+	</div>
+	<div class="arrow">
+		<ul>
+			<li class="arrow_pos_1"></li>
+			<li class="arrow_pos_2"></li>
+			<li class="arrow_pos_3"></li>
+			<li class="arrow_pos_4"></li>
+			<li class="arrow_pos_5"></li>
+			<li class="arrow_pos_6"></li>
+			<li class="arrow_pos_7"></li>
+		</ul>
+	</div>
+	<div class="banner_menu">
+		<ul>
+			<li class="bg_pos_1"></li>
+			<li class="bg_pos_2"></li>
+			<li class="bg_pos_3"></li>
+			<li class="bg_pos_4"></li>
+			<li class="bg_pos_5"></li>
+			<li class="bg_pos_6"></li>
+		</ul>
+	</div>
+	<div class="right_side"><img src="img/santa.png" alt="" /></div>
+</div>
+
+
+#wrap>(.screen>(.side>div>img[src="img/side_$.png"]*6)+(.banner>img[src="img/banner_$.jpg"]*6))+(ul>li*6>a[href="#"])
+
+<div id="wrap">
+	<div class="screen">
+		<div class="side">
+			<div>
+				<img src="img/side_1.png" alt="" />
+				<img src="img/side_2.png" alt="" />
+				<img src="img/side_3.png" alt="" />
+				<img src="img/side_4.png" alt="" />
+				<img src="img/side_5.png" alt="" />
+				<img src="img/side_6.png" alt="" />
+			</div>
+		</div>
+		<div class="banner">
+			<img src="img/banner_1.jpg" alt="" />
+			<img src="img/banner_2.jpg" alt="" />
+			<img src="img/banner_3.jpg" alt="" />
+			<img src="img/banner_4.jpg" alt="" />
+			<img src="img/banner_5.jpg" alt="" />
+			<img src="img/banner_6.jpg" alt="" />
+		</div>
+	</div>
+	<ul>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

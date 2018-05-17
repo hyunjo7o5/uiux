@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 레이아웃 설계</title>
+    <style>
+        *{margin: 0;padding: 0;}
+
+        #wrap{
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        header, #left, #cont, footer{
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        header{
+            width: 698px;
+            height: 150px;
+            line-height: 150px;
+        }
+
+        section{
+            margin: 10px 0;
+            *zoom:1;
+        }
+
+        section:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+
+        #left{            
+            float: left;
+            width: 248px;
+            height: 400px;
+            margin-right:10px;
+            line-height: 400px;
+        }
+
+        #cont{
+            float: left;
+            width: 438px;
+            height: 400px;
+            line-height: 400px;
+        }
+
+
+        footer{
+            width: 698px;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header>메인메뉴 영역</header>
+
+        <section>
+            <div id="left">서브메뉴</div>
+            <div id="cont">본문내용</div>        
+        </section>
+
+        <footer>Copyright</footer>
+    </div>
+
+
+</body>
+</html>

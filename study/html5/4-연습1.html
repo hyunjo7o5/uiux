@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>레이아웃 연습1</title>
+	<style>
+		*{margin:0; padding:0;}
+		
+		#wrap{
+			width:700px; 
+			margin:0 auto;
+		}
+		
+		header, .left, .cont, footer{
+			text-align:center;
+			border:1px solid black;
+		}
+		
+		header{
+			width:698px;
+			height:150px;
+			margin-top:30px;
+			line-height:150px;
+		}
+		
+		section{
+			margin:10px 0;
+			*zoom:1;
+		}
+		
+		section:after{display:block; clear:both; content:'';}
+		
+		section>.left{
+			float:left;
+			width:250px;
+			height:400px;
+			line-height:400px;
+			margin-right:10px;
+		}
+		
+		
+		section>.cont{
+			float:left;
+			width:436px;
+			height:400px;
+			line-height:400px;
+		}
+		
+		
+		footer{
+			width:698px;
+			height:100px;
+			line-height:100px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	   <div id="wrap">
+      <header>메인메뉴 영역</header>
+
+      <section>
+         <div class="left">서브메뉴</div>
+         <div class="cont">본문내용</div>
+      </section>
+
+      <footer>Copyright</footer>      
+   </div>
+</body>
+</html>

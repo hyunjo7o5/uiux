@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>마감재를 사용한 플롯해제</title>
+	<style >
+	
+		*{margin: 0; padding: 0;} 
+		ul, li{list-style:none; }
+		
+
+		
+		h1{
+			height:100px;
+			line-height:100px;
+			text-align:center;
+		}
+	
+		ul{*zoom:1;}
+		
+		ul:after{display:block; clear:both; content:'';}
+	
+		ul>li{
+			float:left;
+			width:200px;
+			height:50px;
+			border:1px solid black;
+			/*border-right:none;*/
+			border-right-width:0;
+			box-sizing:border-box; /*bxz:bb*/
+		}
+		
+		/*box-sizing:border-box; =테두리가 안에서 생김 크기에 영향미치지 않음*/
+		
+		ul>li:last-child{
+			/*border-right:1px solid black;*/
+			border-right-width:1px;
+		}
+		
+		div.clear{clear:both;}
+		
+		p{text-align:center; clear:both;}
+		
+	
+	
+	</style>
+</head>
+<body>
+	<!-- #wrap>h1+(ul>li*3>a[href="#"]) -->
+	
+	<div id="wrap">
+		<h1>마감재를 사용한 플롯해제</h1>
+		<ul>
+			<li><a href="#">메뉴-1</a></li>
+			<li><a href="#">메뉴-2</a></li>
+			<li><a href="#">메뉴-3</a></li>
+		</ul>
+		
+		<!-- <div class="clear"></div> -->
+		
+		<p>본문</p>
+		
+		<address style="text-align:center;">엔지니어링반</address>
+	</div>
+</body>
+</html>

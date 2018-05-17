@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>이미지 밑에 약간 드는 현상해결법</title>
+	<style>
+		*{margin:0; padding:0;}
+		
+		p.frame{
+			width:150px;
+			outline:1px solid red;
+			/*outline은 박스사이즈에 영향을 미치지 않음*/
+		}	
+		
+		p.frame>img{
+			width:100%;
+			
+			<!-- /*첫번째 해결방법*/ -->
+			<!-- /*vertical-align:top;*/ -->
+			
+			<!-- /*두번째 해결방법*/ -->
+			<!-- display:block; -->
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>이미지 이상현상</h1>
+		<p class="frame">
+		<!-- 이미지를 사용하기전에 frame 처럼 감싸는 태그 만들어줘서 그걸로 조정하고 이미지는 width100%로 주기 -->
+			<img src="images/poster.gif" alt="루벤스와 세기의 거장들" />
+			<!-- alt는 대체 텍스트 -->
+		</p>
+	</div>
+</body>
+</html>
