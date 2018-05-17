@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+#wrap{
+
+}
+
+/*header*/
+header{
+	width:100%;
+	height:50px;
+	background-color:#FFF;
+	border-bottom:3px solid #000;
+}
+
+header.on{
+	position:fixed;
+}
+
+
+header>div{
+	width:980px;
+	height:40px;
+	margin:15px auto;
+	outline:1px solid red;
+}
+/*로고*/
+header>div>h1{
+	width:60px;
+	height:40px;
+	text-indent:-9999px;
+	background-size:contain;
+	background-position:center center;
+	background-image:url(../images/logo160629.png);
+	background-repeat:no-repeat;
+}
+/*nav*/
+header>div>.gnb{
+	position:absolute;
+	top:28px;
+	left:50%;
+	margin-left:-420px;
+	width:500px;
+	height:50px;
+}
+
+header>div>.gnb>ul{
+	*zoom:1;
+}
+header>div>.gnb>ul:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+header>div>.gnb>ul>li{
+	float:left;
+	width:80px;
+	font-size:12px;
+	text-align:center;
+	border-right:1px solid #666;
+}
+
+header>div>.gnb>ul>li:last-child{
+	border-right:0px;
+}
+
+header>div>.gnb>ul>li>a{
+	text-decoration:none;
+}
+
+/*section-slide*/
+
+section>.slides-container{
+	position:relative;
+	width:100%;
+	height:440px;
+}
+
+section>.slides-container>li{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:440px;
+	text-indent:-9999px;
+	background-position:center center;
+}
+
+section>.slides-container>li:nth-child(1){background-image:url(../images/PC_Game_Play_kr_123123.png);}
+section>.slides-container>li:nth-child(2){background-image:url(../images/PC_Game_rangers_ko_12333.png);}
+section>.slides-container>li:nth-child(3){background-image:url(../images/PC_LINE_Store_ko.png);}
+section>.slides-container>li:nth-child(4){background-image:url(../images/PC_visual_01_k_0802o.png);}
+
+
+/* section-article */
+
+section{*zoom:1;}
+section:after{display:block; clear:both; content:'';}
+
+section>article{
+
+	width:1000px;
+	height:600px;
+	margin:100px auto;
+
+}
+section>article p{
+	width:450px;
+	height:560px;
+
+}
+section>article>div{
+	float:left;
+	width:400px;
+	height:400px;
+	margin:50px 50px;
+
+}
+section>article>div>h2{
+
+	color:#333;
+	font-size:54px;
+	line-height:60px;
+	font-weight:400;
+	margin-bottom:20px;
+}
+
+section>article>div>h3{
+
+	height:auto;
+	color:#333;
+	font-size:14px;
+	line-height:1.5;
+	letter-spacing:0.5px;
+}
+
+
+section>.left>p{
+	float:left;
+}
+
+section>.right>p{
+	float:right;
+}
+
+section>.one>p{
+	margin-left:-120px;
+	margin-top:-100px;
+}
+
+section>.one>div{
+	margin-left:200px;
+
+}
+
+/* section-timeline */
+
+
+.time>div{
+	width:220px;
+	height:400px;
+}
+
+.time>div>p{
+	width:200px;
+	height:300px;
+}
+
+.time>div>.txt>h4{
+	color:#222;
+	margin-bottom:10px;
+	font-size:14px;
+}
+
+.time>div>.txt>h5{
+	font-size:12px;
+}
+
+.time>div>.txt>h4>a{
+	position:relative;
+	width:16px;
+	height:16px;
+	background-image:url(../images/spritePC170420.png);
+	background-position:-849px 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
