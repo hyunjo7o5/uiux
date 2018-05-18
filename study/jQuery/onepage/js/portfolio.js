@@ -118,10 +118,20 @@ $(document).ready(function(){
 		
 	});
 	
+	var lightbox_idx = 0;//몇번째 라이트 박스인지를 알려주는 인덱스
 	
-	
-	$(".click>a").eq(0).on("click",function(evt){
+	$(".click>a").on("click",function(evt){
 		
+		lightbox_idx = $(".click>a").index(this);
+		
+		$(".shadow").show();
+		$(".lightbox").show();
+		$(".sub").eq(lightbox_idx).show();
+		evt.preventDefault();		
+	});
+/*	
+	$(".click>a").eq(0).on("click",function(evt){
+		lightbox_idx = 0;
 		$(".shadow").show();
 		$(".lightbox").show();
 		$(".lightbox1").show();
@@ -129,7 +139,7 @@ $(document).ready(function(){
 	});
 	
 	$(".click>a").eq(1).on("click",function(evt){
-		
+		lightbox_idx = 1;
 		$(".shadow").show();
 		$(".lightbox").show();
 		$(".lightbox2").show();
@@ -137,7 +147,7 @@ $(document).ready(function(){
 	});
 	
 	$(".click>a").eq(2).on("click",function(evt){
-		
+		lightbox_idx = 2;
 		$(".shadow").show();
 		$(".lightbox").show();
 		$(".lightbox3").show();
@@ -145,18 +155,20 @@ $(document).ready(function(){
 	});
 	
 	$(".click>a").eq(3).on("click",function(evt){
-		
+		lightbox_idx = 3;
 		$(".shadow").show();
 		$(".lightbox").show();
 		$(".lightbox4").show();
 		evt.preventDefault();
 	});
-	
+*/	
 	
 	
 	$(".clse").on("click",function(){
+		$(".sub").eq(lightbox_idx).hide();
 		$(".lightbox").hide();
 		$(".shadow").hide();
+		
 	});
 			
 	//부모(.shadow) 영역으로의 이벤트 전파 stop
