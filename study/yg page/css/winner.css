@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700');
-
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700');
 /* header */
 
 header{
@@ -22,6 +21,10 @@ header>.logo{
 	background-position:center center;
 }
 
+
+header>.menu,.clse{
+	text-indent:-9999px;
+}
 
 
 header>h1{
@@ -78,6 +81,11 @@ section>.main{
 	position:absolute;
 	right:0;
 	top:30px;
+}
+
+.main>.video>iframe{
+	width:1350px;
+	height:700px;
 }
 
 	/* new album 소개 */
@@ -171,27 +179,87 @@ section>.album>.album-sub1{
 	font-size:15px;
 }
 
+
+/* FOOTER */
+
+footer{
+
+	width:100%;
+	height:50px;
+	border-top:1px solid #666;
+}
+
+footer>div{
+	position:relative;
+	width:1000px;
+	height:50px;
+
+	margin:0 auto;
+}
+
+
+
+footer>div>.fcon>.flogo{
+	position:absolute;
+	width:50px;
+	height:50px;
+	background-image:url(../images/logo_footer.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	line-height:50px;
+	text-indent:-9999px;
+}
+
+footer>div>.fcon>p{
+	position:absolute;
+	width:300px;
+	height:50px;
+	color:#000;
+
+	font-size:11px;
+	left:70px;
+	top:10px;
+}
+
+footer>div>.flist{
+	position:absolute;
+	right:0;
+	top:10px;
+	width:500px;
+	height:50px;
+
+}
+footer>div>.flist>li{
+
+	float:left;
+	margin-left:25px;
+}
+
+footer>div>.flist>li>a{
+	color:#000;
+	font-weight:600;
+	font-family:Titillium Web;
+	text-decoration:none;
+}
+
+footer>div>.flist>li:hover>a{
+	color:red;
+}
+
+
 /*반응형*/
 
 
 @media screen and (max-width:768px){
 	
 	header{
-		position:relative;
-		width:100%;
 		height:120px;
-		background-color:#FF0;
 	}
 
 	header>.logo{
-		position:absolute;
 		left:50%;
 		top:10px;
-		width:150px;
-		height:60px;
 		margin-left:-75px;
-		text-indent:-9999px;
-		background-image:url(../images/logo.jpg);
 		background-repeat:no-repeat;
 		background-position:center center;
 	}
@@ -199,31 +267,188 @@ section>.album>.album-sub1{
 	header>.menu{
 		position:absolute;
 		right:20px;
-		top:50px;
+		top:25px;
 		width:40px;
 		height:40px;
-		text-indent:-9999px;
 		cursor:pointer;
 		background-size:cover;
 		background-image:url(../images/menu.png);
 	}
+	
+	header>.on{
+		background-image:url(../images/close.png);
+	}
 
 	header>h1{
-		position:absolute;
-		bottom:10px;
-		left:50%;
-		width:120px;
-		height:40px;
-		margin-left:-60px;
-		text-align:center;
-		line-height:40px;
-		color:#000;
+		bottom:0;
 		font-size:25px;
+	}
+	
+	section>.main{
+		height:330px;
+	}
+	
+
+	
+	.main>.nav{
+		display:none;
+		top:20px;
+		left:0;
+		width:100%;
+		height:600px;
+		font-size:20px;
+		line-height:40px;
 		font-family:Titillium Web;
+		text-align:center;
+		background-color:#000;
+		z-index:100;
+
+	}
+
+	.main>.nav>li{
+		width:150px;
+		margin:15px auto;
+
+	}
+
+	.main>.nav>li>a{
+		color:#fff;
+		text-decoration:none;
+	}
+
+	.main>.video{
+		position:absolute;
+		width:100%;
+		height:300px;
+	}
+
+	.main>.video>iframe{
+		width:100%;
+		height:100%;
 	}
 	
 	
+	section>.album{
+		height:2000px;
+	}
+
+	.album>h2{
+		width:100%;
+		height:auto;
+		font-size:20px;
+	}
+
+
+	section>.album>.album-sub1{
 	
+		width:100%;
+		
+		background-image:none;
+	}
+	
+	section>.album>.album-sub1>.pic{
+		width:100%;
+		height:500px;
+		background-attachment:fixed;
+		background-image:url(../images/album-m.jpg);
+		background-position:center center;
+
+	}
+	
+	.album>.album-sub1>.txt{
+	
+		width:100%;
+		left:0;
+		top:500px;
+		background-color:#7fa0a7;
+	}
+
+	
+	.album>.album-sub1>.txt>p{
+		font-size:15px;
+		margin:18px;
+	}
+
+
+		/* new album track */
+
+	.album>.album-sub2{
+		position:relative;
+		width:100%;
+		height:500px;
+	}
+	
+
+	.album>.album-sub2>.albumtrack{
+		position:absolute;
+		top:900px;
+		width:100%;
+	}
+
+	.album>.album-sub2>.albumtrack>p{
+		display:none;
+	}
+
+
+	.album>.album-sub2>.albumtrack>ul{
+		width:100%;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	
+		
+	footer{
+		position:relative;
+		width:100%;
+		height:150px;
+		border-top:3px solid #666;
+	}
+
+	footer>div{
+		position:absolute;
+		width:100%;
+		height:150px;
+	}
+
+	footer>div>.fcon{
+		position:absolute;
+		width:380px;
+		bottom:0;
+		left:50%;
+		margin-left:-180px;
+	}
+
+
+	footer>div>.fcon>.flogo{
+		/*
+		position:absolute;
+		width:50px;
+		bottom:0;
+		left:10px;*/
+	}
+
+	footer>div>.fcon>p{
+		/*
+		position:absolute;
+		bottom:0;
+		width:300px;*/
+	}
+
+	footer>div>.flist{
+		width:100%;
+
+	}
+	footer>div>.flist>li{
+		text-align:center;
+		float:none;
+		margin-bottom:20px;
+	}
+
+	footer>div>.flist>li>a{
+		font-size:15px;
+
+	}
 	
 }
 
