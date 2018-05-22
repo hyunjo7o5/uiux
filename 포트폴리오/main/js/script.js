@@ -56,13 +56,13 @@ $(document).ready(function(){
 		
 		
 		//문서가 load(된 시점에) 이벤트 구문
-		/*$(window).on("load", function(){
+		$(window).on("load", function(){
 			
 			$("html, body").animate({scrollTop:0});
 			$(".gnb>li>a").eq(0).parent().addClass("on"); //첫번째 메뉴 활성화
 		
 			
-		});*/
+		});
 		
 	
 	
