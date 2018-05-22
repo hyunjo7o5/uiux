@@ -4,9 +4,7 @@ $(document).ready(function(){
 		
 		$(".menu").toggleClass("on");
 		
-		$(".nav").toggle();
-		
-		console.log("클릭");
+		$(".navm").toggle();
 		
 	});
 	

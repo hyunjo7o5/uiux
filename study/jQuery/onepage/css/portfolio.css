@@ -304,19 +304,22 @@ section{
 	background-size:cover;
 	background-position:-100px 0;
 	}
+	
 .container_3>.click>a:nth-child(3){
-	background-image:url(../images/event.jpg);
-	background-size:cover;
-}
-.container_3>.click>a:nth-child(4){
 	background-image:url(../images/port.jpg);
 	background-size:cover;
 	background-position:-110px 0;
 }
+.container_3>.click>a:nth-child(4){
+	background-image:url(../images/renew2-1.jpg);
+	background-size:cover;
+}
+
 .container_3>.click>a:nth-child(5){
-
-
-	}
+	background-image:url(../images/renew.jpg);
+	background-size:cover;
+	background-position:center center;
+}
 
 .container_3>.click>a:nth-child(6){
 	
@@ -487,37 +490,55 @@ top:300px;
 
 .lightbox2{display:none;}
 
-
-/*lightbox3 event page*/
+/*lightbox3 portfolio page*/
 
 .lightbox3>.content>.sub-photo>p:first-child{
-	top:80px;
-	left:50px;
-	background-image:url(../images/eventpg1.jpg);
-
-}
-.lightbox3>.content>.sub-photo>p:last-child{
-	top:300px;
-	left:150px;
-	background-image:url(../images/eventpg1.jpg);
-}
-
-.lightbox3{display:none;}
-
-/*lightbox4 portfolio page*/
-
-.lightbox4>.content>.sub-photo>p:first-child{
 	top:80px;
 	left:50px;
 	background-image:url(../images/port2.jpg);
 
 }
-.lightbox4>.content>.sub-photo>p:last-child{
+.lightbox3>.content>.sub-photo>p:last-child{
 	top:300px;
 	left:150px;
 	background-image:url(../images/port1.jpg);
 }
+.lightbox3{display:none;}
+
+
+
+/*lightbox4 event page*/
+
+.lightbox4>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/renew2-2.jpg);
+
+}
+.lightbox4>.content>.sub-photo>p:last-child{
+	top:300px;
+	left:150px;
+	background-image:url(../images/renew2-1.jpg);
+}
+
 .lightbox4{display:none;}
+
+
+
+/*lightbox5 renewal page*/
+
+.lightbox5>.content>.sub-photo>p:first-child{
+	top:80px;
+	left:50px;
+	background-image:url(../images/renew2.jpg);
+
+}
+.lightbox5>.content>.sub-photo>p:last-child{
+	top:300px;
+	left:150px;
+	background-image:url(../images/renew1.jpg);
+}
+.lightbox5{display:none;}
 
 /* epilogue */
 .container_4{*zoom:1;}
